@@ -1,0 +1,1 @@
+sudo virt-install --virt-type kvm --name NEMS-1.6-CLI --memory 4096 --vcpus 2 --disk </path/to/qcow2 file> --import --os-variant debian11 --network bridge:<network bridge ID>
