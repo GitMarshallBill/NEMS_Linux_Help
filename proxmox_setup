@@ -1,0 +1,13 @@
+Create the VM in Proxmox as per requirements on NEMS Linux download page.
+
+Make note of VM number created
+
+scp NEMS qcow2 file to root@<proxmoxIP>:/var/lib/vz/images/<nems vm number>
+
+either ssh into proxmox or using shell on Proxmox webpage cd into /var/lib/vz/images/<nems vm number>
+
+run rm vm-<vm number>-disk-0.qcow2
+
+rename NEMS qcow file to vm-<vm number>-disk-0.qcow2
+
+Then try starting VM
